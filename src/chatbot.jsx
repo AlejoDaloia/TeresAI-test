@@ -17,7 +17,7 @@ function Chatbot() {
     const fullPrompt = systemPrompt + "\nUsuario: " + input;
 
     const reply = await sendMessageToOllama(fullPrompt);
-    const botMessage = { role: "bot", text: reply };
+    const botMessage = { role: "Teresa", text: reply };
 
     setMessages((prev) => [...prev, botMessage]);
     setInput("");
